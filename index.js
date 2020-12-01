@@ -1,5 +1,5 @@
 const express = require('express');
-
+const cors = require('cors');
 const app = express();
 
 const { config } = require('./config/index');
@@ -10,6 +10,8 @@ const notFoundHandler = require('./utils/middlewares/notFoundHandler');
 
 //body parser
 app.use(express.json());
+//enabling CORS
+app.use(cors());
 
 //routes
 moviesApi(app);

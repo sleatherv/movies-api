@@ -23,7 +23,7 @@ function moviesApi(app) {
             //throw new Error('Error getting movies')
             res.status(200).json({
                 data: movies,
-                message: 'movie retrieved'
+                message: 'movies retrieved'
             })
         } catch (err) {
             next(err);
@@ -76,7 +76,7 @@ function moviesApi(app) {
 
             res.status(200).json({
                 data: deletedMovieId,
-                message: 'movies delleted'
+                message: 'movies deleted'
             })
         } catch (err) {
             next(err);

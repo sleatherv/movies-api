@@ -1,2 +1,2 @@
 # Movies-api
-API to query movie information created with nodejs and express.
+REST API to query movie information created with nodejs and express.

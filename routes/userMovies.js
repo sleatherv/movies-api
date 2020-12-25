@@ -52,7 +52,7 @@ function userMoviesApi(app) {
             } catch (error) {
                 next(error);
             }
-        })
+        });
 };
 
 module.exports = userMoviesApi;
